@@ -1,4 +1,8 @@
-
+.banner{
+    background: url("https://getwallpapers.com/wallpaper/full/7/2/f/1221919-vertical-the-best-wallpapers-for-desktop-3840x2160-macbook.jpg")center / cover;
+    width: 100%;
+    height: 100vh;
+}
 
 .portfolio-title{
     width: 80%;
