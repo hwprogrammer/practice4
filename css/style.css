@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 .banner{
     background: url("https://getwallpapers.com/wallpaper/full/7/2/f/1221919-vertical-the-best-wallpapers-for-desktop-3840x2160-macbook.jpg")center / cover;
     width: 100%;
@@ -36,8 +40,6 @@
     background-color: aqua;
     align-items: center;
     position: fixed;
-    top: 0;
-    left: 0;
 }
 
 .list{
