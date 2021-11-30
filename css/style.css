@@ -28,3 +28,51 @@
 .portfolio-banner .card img{
     width: 100%;
 }
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+    align-items: center;
+    position: fixed;
+}
+
+.list{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list li{
+    list-style: none;
+}
+
+.list li a{
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.container input{
+    border-radius: 30px;
+    width: 20%;
+    height: 25px;
+    border: solid 2px aqua;
+
+}
+
+.icons{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons li{
+    list-style: none;
+}
+
+.icons li a{
+    text-decoration: none;
+    font-size: 18px;
+}
