@@ -1,0 +1,26 @@
+
+
+.portfolio-title{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.portfolio-banner{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.portfolio-banner .card{
+    margin: 20px;
+    border: 1px solid #3f3f3f;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.6);
+    padding: 10px;
+}
+
+.portfolio-banner .card img{
+    width: 100%;
+}
