@@ -2,6 +2,99 @@ body{
     margin: 0;
 }
 
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+    align-items: center;
+    position: fixed;
+}
+
+.list{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list li{
+    list-style: none;
+}
+
+.list li a{
+    position: relative;
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.list li a:hover{
+    color: red;
+}
+
+.list li a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid blue;
+    border-bottom: 1px solid green;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: .5s;
+    z-index: -1;
+}
+
+.list li a:hover:before{
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.list li a::after{
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    top: 1px;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: gold;
+    transform: scale(0);
+    transition: .5s;
+    z-index: -1;
+}
+
+.list li a:hover::after{
+    transform: scale(1);
+}
+
+
+.container input{
+    border-radius: 30px;
+    width: 20%;
+    height: 25px;
+    border: solid 2px aqua;
+
+}
+
+.icons{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons li{
+    list-style: none;
+}
+
+.icons li a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
 .banner{
     background: url("https://getwallpapers.com/wallpaper/full/7/2/f/1221919-vertical-the-best-wallpapers-for-desktop-3840x2160-macbook.jpg")center / cover;
     width: 100%;
@@ -27,12 +120,12 @@ body{
     border: 1px solid #3f3f3f;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.6);
     padding: 10px;
-    position: relative;
 }
 
 .portfolio-banner .card img{
     width: 100%;
 }
+
 
 .portfolio-banner .card::before{
     content: '';
@@ -59,51 +152,4 @@ body{
     transition: 300ms;
 }
 
-.container{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    background-color: aqua;
-    align-items: center;
-    position: fixed;
-    z-index: 3;
-}
 
-.list{
-    width: 35%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.list li{
-    list-style: none;
-}
-
-.list li a{
-    color: red;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.container input{
-    border-radius: 30px;
-    width: 20%;
-    height: 25px;
-    border: solid 2px aqua;
-
-}
-
-.icons{
-    width: 10%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.icons li{
-    list-style: none;
-}
-
-.icons li a{
-    text-decoration: none;
-    font-size: 18px;
-}
